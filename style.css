@@ -7,6 +7,9 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .storage-card {
@@ -21,7 +24,13 @@ body {
   );
 
   border: 1px solid rgb(208, 208, 208);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+}
+
+.storage-card-0 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card-body {
@@ -37,21 +46,28 @@ body {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
 
-  /* border: 1px solid rgba(255, 255, 255, 0); */
   border-radius: 3rem;
   padding: 2rem;
   width: fit-content;
   color: white;
   box-sizing: border-box;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
 
-.card-body {
   display: flex;
   justify-content: center;
   margin: 1px;
-  /* background-color: aqua; */
 }
+
+.card-body-0 {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* .card-body-1 {
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 2px rgb(0, 0, 0);
+} */
 
 .left-section {
   display: flex;
@@ -96,6 +112,11 @@ body {
 
 .progress-bar-fill {
   border: 0.58px solid rgba(255, 255, 255, 0.2);
+  height: 90%;
+  border-radius: 9999px;
+}
+
+.progress-bar-fill-0 {
   background: linear-gradient(to bottom, #ff3535 0%, #d41212 50%, #ab0f0f 100%),
     linear-gradient(
       to right,
@@ -106,8 +127,16 @@ body {
   box-shadow: 0 2px 15px rgba(248, 50, 50, 0.833),
     inset 0 1px 2px rgba(255, 255, 255, 0.4),
     inset 0 -1px 2px rgba(0, 0, 0, 0.3);
-  height: 90%;
-  border-radius: 9999px;
+}
+
+.progress-bar-fill-1 {
+  background: linear-gradient(to right, #4caf50 0%, #2e7d32 100%),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
 }
 
 .device-icon-container {
