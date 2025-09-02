@@ -10,17 +10,45 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   min-height: 100vh;
+  background-image: url("/public/BG2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.App {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* .wrapper {
+  padding: 2px; /* border thickness */
+/* border-radius: 12px;
+  background: linear-gradient(
+    190deg,
+    rgba(255, 0, 0, 0) 20%,
+    rgb(255, 255, 255) 80%
+  );
+  height: fit-content;
+  color: white;
+} 
+
+.content {
+  border-radius: 10px; 
+  background: rgba(92, 87, 87, 0.474); 
+  padding: 20px;
+} */
 
 .storage-card {
   padding: 10px;
   border-radius: 3.5rem;
-  background: rgba(15, 15, 15, 0.5);
-  background: rgba(245, 245, 245, 0.03);
+  background: rgba(15, 15, 15, 0.3);
+  background: rgba(245, 245, 245, 0.02);
   background: linear-gradient(
     111.83deg,
-    rgba(150, 150, 150, 0.539) 10.85%,
-    rgba(181, 181, 181, 0.609) 60.46%
+    rgba(150, 150, 150, 0.3) 10.85%,
+    rgba(181, 181, 181, 0.4) 60.46%
   );
 
   border: 1px solid rgb(208, 208, 208);
@@ -30,21 +58,23 @@ body {
 .storage-card-0 {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
     inset 0 1px 2px rgba(255, 255, 255, 0.4),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+    inset 0 -1px 2px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
   background-blend-mode: color-dodge;
-  background: rgba(15, 15, 15, 0.5);
-  background: rgba(245, 245, 245, 0.03);
+  /* background: rgba(15, 15, 15, 0.25);
+  background: rgba(245, 245, 245, 0.015);
   background: linear-gradient(
     131.83deg,
-    rgba(150, 150, 150, 0.539) 10.85%,
-    rgba(0, 23, 32, 0.609) 60.46%
-  );
+    rgba(150, 150, 150, 0.25) 10.85%,
+    rgba(0, 23, 32, 0.35) 60.46%
+  ); */
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  /* backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px); */
 
   border-radius: 3rem;
   padding: 2rem;
@@ -58,16 +88,70 @@ body {
 }
 
 .card-body-0 {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
-    inset 0 1px 2px rgba(255, 255, 255, 0.4),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(108, 20, 20, 0),
+    inset 1px -1px 2px rgba(203, 203, 203, 0.81),
+    inset 1px -1px 2px rgba(203, 203, 203, 0.795);
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
-/* .card-body-1 {
+.card-body-1 {
   box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0),
     inset 0 1px 2px rgba(255, 255, 255, 0.4),
-    inset 0 -1px 2px rgb(0, 0, 0);
-} */
+    inset 0 -1px 2px rgb(255, 255, 255);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+.glass-card {
+  width: 240px;
+  height: 360px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
 
 .left-section {
   display: flex;
