@@ -1,11 +1,10 @@
 import React from "react";
 import StorageCard from "./StorageCard";
 import "./App.css";
-import LiquidGlass from "liquid-glass-react";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App fixed">
       <StorageCard
         cardIndex={0}
         storageAmount="847GB"
@@ -18,6 +17,14 @@ function App() {
         storageAmount="847GB"
         storageTotal="1TB"
         percentage={84.7}
+        imageSrc="/Image.png"
+      />
+
+      <StorageCard
+        cardIndex={2}
+        storageAmount="247GB"
+        storageTotal="1TB"
+        percentage={29.7}
         imageSrc="/Image.png"
       />
 

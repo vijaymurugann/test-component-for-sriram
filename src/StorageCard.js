@@ -8,7 +8,7 @@ const StorageCard = ({
   imageSrc,
 }) => {
   return (
-    <div className={`storage-card storage-card-${cardIndex}`}>
+    <div className={`storage-card storage-card-${cardIndex}` }>
       <div className={`card-body card-body-${cardIndex}`}>
         <div className="left-section">
           <div className="card-header">
@@ -35,6 +35,7 @@ const StorageCard = ({
           <img src={imageSrc} alt="Device" className="device-image" />
         </div>
       </div>
+      
     </div>
   );
 };
