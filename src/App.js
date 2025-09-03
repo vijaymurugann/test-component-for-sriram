@@ -1,5 +1,6 @@
 import React from "react";
 import StorageCard from "./StorageCard";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./App.css";
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         imageSrc="/Image.png"
       /> */}
 
-      <div className="button">Lable</div>
+      <div className="button">
+        <FaChevronLeft /> Lable <FaChevronRight />
+      </div>
 
       {/* <div class="wrapper">
         <div class="content">Your content here</div>
