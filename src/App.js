@@ -6,13 +6,18 @@ import "./App.css";
 function App() {
   return (
     <div className="App fixed">
-      {/* <StorageCard
+      <StorageCard
         cardIndex={0}
         storageAmount="847GB"
         storageTotal="1TB"
         percentage={84.7}
         imageSrc="/Image.png"
-      /> */}
+      />
+
+      <div className="button">
+        <FaChevronLeft /> Lable <FaChevronRight />
+      </div>
+
       <StorageCard
         cardIndex={1}
         storageAmount="847GB"
@@ -28,10 +33,6 @@ function App() {
         percentage={29.7}
         imageSrc="/Image.png"
       /> */}
-
-      <div className="button">
-        <FaChevronLeft /> Lable <FaChevronRight />
-      </div>
 
       {/* <div class="wrapper">
         <div class="content">Your content here</div>
