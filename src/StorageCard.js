@@ -8,7 +8,7 @@ const StorageCard = ({
   imageSrc,
 }) => {
   return (
-    <div className={`storage-card storage-card-${cardIndex}` }>
+    <div className={`storage-card storage-card-${cardIndex}`}>
       <div className={`card-body card-body-${cardIndex}`}>
         <div className="left-section">
           <div className="card-header">
@@ -25,17 +25,20 @@ const StorageCard = ({
             <div className="progress-bar-container">
               <div
                 className={`progress-bar-fill progress-bar-fill-${cardIndex}`}
-                style={{ width: `${percentage}%` }}
-              ></div>
+                style={{ width: `${percentage}%` }}></div>
             </div>
           </div>
         </div>
 
         <div className="device-icon-container">
           <img src={imageSrc} alt="Device" className="device-image" />
+          <img
+            src={imageSrc}
+            alt="Device"
+            className="device-image device-image-bg"
+          />
         </div>
       </div>
-      
     </div>
   );
 };
